@@ -5,52 +5,75 @@
     font-family: "Poppins", sans-serif;
   }
   body {
-    background-color: #67d329;
+    background-color: #3d64e6;
   }
-  .wrapper {
-    width: 400px;
+  .container {
+    background-color: #ffffff;
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    border-radius: 0.62em;
+    box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
   }
-  .container {
-    width: 100%;
-    background-color: #2a2c86;
-    padding: 50px 40px;
-    box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
-    position: relative;
-    border-radius: 8px;
+  .search-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+  }
+  .search-wrapper button {
+    font-size: 1em;
+    background-color: #3d64e6;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 1.5em;
+  }
+  .search-wrapper input {
+    font-size: 1em;
+    padding: 0 0.62em;
+    border: none;
+    border-bottom: 2px solid #3d64e6;
+    outline: none;
+   
+    color: #222a43;
+  }
+  #result {
+    margin-top: 1.25em;
+  }
+  .container .flag-img {
+    display: block;
+    width: 45%;
+    min-width: 7.5em;
+    margin: 1.8em auto 1.2em auto;
+  }
+  .container h2 {
+    font-weight: 600;
+    color: #222a43;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
   }
-  .container:after {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 120%;
-    background-color: #dfc656;
-    z-index: -1;
-    top: -10%;
-    left: 10%;
+  .data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
   }
-  .container p {
-    color: #fdd8d8;
-    line-height: 2;
-    font-size: 18px;
+  .container h4 {
+    display: inline;
+    font-weight: 500;
+    color: #222a43;
+  }
+  .container span {
+    color: #5d6274;
   }
   .container h3 {
-    color: #ffffff;
-    margin: 20px 0 60px 0;
-    font-weight: 600;
-    text-transform: capitalize;
-  }
-  .container button {
-    background-color: #ffffff;
-    border: none;
-    padding: 15px 45px;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #f43543;
-    cursor: pointer;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff465a;
   }
