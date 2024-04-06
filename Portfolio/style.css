@@ -85,8 +85,7 @@ html{
 .home-img img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
-
-
+    border-radius: 60%;
 }
 @keyframes floatImage {
     0%{
@@ -149,9 +148,53 @@ span{
     background: var(--second-bg-color);
 }
 .about-img img{
-    width: 35vw;
+
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+.about-img {
+     /* This ensures the pseudo-element doesn't overflow */
+    position: relative; /* For absolute positioning of the pseudo-element */
+   
+  }
+  
+  .about-img img {
+    width: 400px; /* Adjust width as needed */
+    height: 500px;
+  }
+  
+  .about-img:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+   
+  }
+  .about-img:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+  }
+  .about-img::before,
+  .about-img:after
+   {
+    background: linear-gradient(25deg,#89ff00,rgba(190, 14, 96, 0.726),rgb(0, 128, 0));
+  }
+  
 .heading{
     text-align: center;
     font-size: 4.5rem;
