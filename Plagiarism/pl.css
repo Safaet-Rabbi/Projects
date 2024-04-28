@@ -1,0 +1,73 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 125, 114);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 500px; /* Adjust width as needed */
+    background-color: #484ea4;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .file-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc; /* Add border around each file input section */
+    border-radius: 5px; /* Add rounded corners to the border */
+    padding: 5px; /* Add some padding inside the border */
+    background-color: rgb(145, 145, 193);
+  }
+  
+  .file-input label {
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  
+  #result {
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: rgb(151, 212, 104);
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  #result span {  /* Apply background color to the span element */
+  background-color: #e0e0e0; /* Light gray background */
+  padding: 2px 5px; /* Add some padding to the text */
+  border-radius: 3px; /* Add slight rounded corners */
+}
+  
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45A049; /* Green hover */
+  }
+  
